@@ -11,6 +11,9 @@ namespace PassXYZ.Vault
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
+                    fonts.AddFont("fa-regular-400.woff2", "FontAwesomeRegular");
+                    fonts.AddFont("fa-solid-900.woff2", "FontAwesomeSolid");
+                    fonts.AddFont("fa-brands-400.woff2", "FontAwesomeBrands");
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
