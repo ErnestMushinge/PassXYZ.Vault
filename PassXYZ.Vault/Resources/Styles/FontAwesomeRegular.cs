@@ -7,7 +7,7 @@ public static class FontAwesomeRegular
     public const string User = "\uf007";
     public const string Qrcode = "\uf008";
     public const string Fingerprint = "\uf009";
-    public const string Clock = "\\uf017";
+    public const string Clock = "\uf017";
     public const string ListAlt = "\uf022";
     public const string Flag = "\uf024";
     public const string Bookmark = "\uf02e";
