@@ -7,6 +7,7 @@
         public MainPage()
         {
             InitializeComponent();
+            new ContentPageTesting();
         }
 
         private void OnCounterClicked(object? sender, EventArgs e)
@@ -19,6 +20,8 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+          //  var m = new ContentPageTesting();
+          //  m.Window() = this;
         }
     }
 }
