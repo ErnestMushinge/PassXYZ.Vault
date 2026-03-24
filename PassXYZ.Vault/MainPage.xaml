@@ -8,13 +8,13 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-          
+
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
-         
+
             <Label
                 Text="Hello, World!"
                 Style="{StaticResource Headline}"
@@ -25,6 +25,19 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Editor Placeholder="Enter your description here" />
+
+
+            <Entry Placeholder="Enter your password" Keyboard="Text" IsPassword="True" />
+
+            <!--Binding-->
+            <Label Text="Text" FontSize="Medium" />
+            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium"/>
+            <Label Text="Description" FontSize="Medium" />
+            <Editor Text="{Binding Description, Mode=OneWayToSource}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+
+            <!--Buttons-->
 
             <Button
                 x:Name="CounterBtn"
@@ -47,6 +60,7 @@
  Size="16" />
                 </Button.ImageSource>
             </Button>
+
         </VerticalStackLayout>
     </ScrollView>
 
